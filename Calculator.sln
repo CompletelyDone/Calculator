@@ -3,9 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculationsModel", "CalculationsModel\CalculationsModel.csproj", "{434DA41C-3157-446D-9B8E-F00997AD6FDF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculationsModel", "CalculationsModel\CalculationsModel.csproj", "{434DA41C-3157-446D-9B8E-F00997AD6FDF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{25B20A7D-D70E-4A48-8E9A-5CD61F29A1B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ViewModels", "ViewModels", "{2C40BA07-F55F-4E09-90B1-B70740A2FDE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModels", "ViewModels\ViewModels.csproj", "{F43FEC6A-3DF5-48BC-9C63-855CCF0DF943}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Views", "Views", "{E3B5FB86-67F0-4197-929D-C6FEEA5021DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator.WPF", "Calculator.WPF\Calculator.WPF.csproj", "{343D8261-6019-4F4C-97F2-ECAF91BBFEA9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,12 +25,22 @@ Global
 		{434DA41C-3157-446D-9B8E-F00997AD6FDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{434DA41C-3157-446D-9B8E-F00997AD6FDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{434DA41C-3157-446D-9B8E-F00997AD6FDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F43FEC6A-3DF5-48BC-9C63-855CCF0DF943}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F43FEC6A-3DF5-48BC-9C63-855CCF0DF943}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F43FEC6A-3DF5-48BC-9C63-855CCF0DF943}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F43FEC6A-3DF5-48BC-9C63-855CCF0DF943}.Release|Any CPU.Build.0 = Release|Any CPU
+		{343D8261-6019-4F4C-97F2-ECAF91BBFEA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{343D8261-6019-4F4C-97F2-ECAF91BBFEA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{343D8261-6019-4F4C-97F2-ECAF91BBFEA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{343D8261-6019-4F4C-97F2-ECAF91BBFEA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{434DA41C-3157-446D-9B8E-F00997AD6FDF} = {25B20A7D-D70E-4A48-8E9A-5CD61F29A1B1}
+		{F43FEC6A-3DF5-48BC-9C63-855CCF0DF943} = {2C40BA07-F55F-4E09-90B1-B70740A2FDE5}
+		{343D8261-6019-4F4C-97F2-ECAF91BBFEA9} = {E3B5FB86-67F0-4197-929D-C6FEEA5021DE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BFE7A94A-4869-45C4-9A9E-C6A3071DA9FD}

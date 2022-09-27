@@ -12,21 +12,23 @@ namespace CalculationsModel
         public string SecondOperand { get; set; } = String.Empty;
         public string Operation { get; set; } = String.Empty;
         public string Result { get; private set; } = String.Empty;
+        private bool isAtomar;
         public Calculations() { }
         public Calculations(string firstOperand, string secondOperand, string operation)
         {
-            CheckOperand(firstOperand);
-            CheckOperand(secondOperand);
             CheckOperator(operation);
+            CheckOperand(firstOperand);
+            if(!isAtomar)CheckOperand(secondOperand);
+
             FirstOperand = firstOperand;
             SecondOperand = secondOperand;
             Operation = operation;
         }
         protected virtual void Calculate()
         {
-            CheckOperand(FirstOperand);
-            CheckOperand(SecondOperand);
             CheckOperator(Operation);
+            CheckOperand(FirstOperand);
+            if(!isAtomar)CheckOperand(SecondOperand);
             try
             {
                 switch(Operation)
@@ -61,9 +63,19 @@ namespace CalculationsModel
             switch(operation)
             {
                 case "+":
+                    Result = (Convert.ToDouble(FirstOperand) + Convert.ToDouble(SecondOperand)).ToString();
+                    break;
                 case "-":
+                    Result = (Convert.ToDouble(FirstOperand) - Convert.ToDouble(SecondOperand)).ToString(); 
+                    break;
                 case "*":
+                    Result = (Convert.ToDouble(FirstOperand) * Convert.ToDouble(SecondOperand)).ToString();
+                    break;
                 case "/":
+                    isAtomar = false;
+                    break;
+                case "sqrt":
+                    isAtomar = true;
                     break;
                 default:
                     Result = "Operation error";
