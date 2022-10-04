@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
+using System.Globalization;
 using System.Windows.Shapes;
 
 namespace Calculator.WPF
@@ -22,6 +23,7 @@ namespace Calculator.WPF
     {
         public MainWindow()
         {
+            CultureInfo.CurrentCulture = new CultureInfo("en-en");
             InitializeComponent();
         }
     }

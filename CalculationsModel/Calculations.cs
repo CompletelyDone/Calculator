@@ -74,7 +74,7 @@ namespace CalculationsModel
                 case "/":
                     isAtomar = false;
                     break;
-                case "sqrt":
+                case "√":
                     isAtomar = true;
                     break;
                 default:
